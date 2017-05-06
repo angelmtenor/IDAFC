@@ -50,7 +50,6 @@ subway_df = pd.read_csv(filename)
 # Write code here to group the subway data by a variable of your choice, then
 # either print out the mean ridership within each group or create a plot.
 
-
 print(subway_df.head())
 grouped_data = subway_df.groupby('day_week')
 print(grouped_data.mean())
