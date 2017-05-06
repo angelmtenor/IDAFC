@@ -18,7 +18,7 @@ if False:
     # print(first_even['even'])  # Causes an error. 'even' is no longer a column in the DataFrame
 
 # groupby() with as_index=False
-if True:
+if False:
     first_even = example_df.groupby('even', as_index=False).first()
     print(first_even)
     print(first_even['even'])  # Now 'even' is still a column in the DataFrame

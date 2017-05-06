@@ -52,6 +52,7 @@ subway_df = pd.read_csv(filename)
 
 print(subway_df.head())
 grouped_data = subway_df.groupby('day_week')
-print(grouped_data.mean())
-grouped_data.mean()['ENTRIESn_hourly'].plot()
+mean_ridership = grouped_data.mean()['ENTRIESn_hourly']
+print(mean_ridership)
+mean_ridership.plot()
 plt.show()
